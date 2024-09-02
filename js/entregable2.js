@@ -30,7 +30,7 @@ botonmostrar.addEventListener("click", mostrarProductos);
 
 function agregarProducto() {
     let idinv = tomaridinv();
-    let nombinv = tomarnombinv();
+    let nombinv = tomarnombinv().toLowerCase().trim();
     if ((nombinv != "") && (idinv != "")) {
         const producto = { id: idinv, nombre: nombinv };
         carritoDeCompras.push(producto);
